@@ -34,6 +34,9 @@ Provide a short (~150 words) summary of your work on this circuit:
 - What worked? What didn't? 
 - Be sure to link to your code (in your GitHub repository) in the text of your response.
 -->
+The thermistor finds the temperature of the room and relays it to the arduino. This is where the map function is used on a range of temperatures (26 - 30) to colours (0 - 255). Then depending on this mapped number, the color of the led is changed. A number less than 80 changes to blue, greater than 180 changes to red, and otherwise, the color changes to yellow. I found it challenging to find an accurate way to change the colour depending on the temperature. Initially, even though the colour was right, the brightness was not matching. For example, when the value is less than 80, the colour (0, 0, 80) is not bright, so I had to multiply the number by 3. However, changing the color accurately did not work. The range between 0 and 80, or 180 and 255, should not have one colour, but the overall colour changing worked.
+
+[Here is a link to the code](https://github.com/inspire-1a03/intersession-2020-SaribK/blob/master/Thermistor_with_RGB_LED.ino)
 
 ## Arduino build-off results
 <!--
