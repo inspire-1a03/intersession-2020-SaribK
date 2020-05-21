@@ -63,14 +63,14 @@ void loop() {
   float temp;
   float outputValue = 0;
   temp=Thermistor(analogRead(ThermistorPIN));       // read ADC and  convert it to Celsius
-  Serial.print("Celsius: ");
+  Serial.print(temp,1);
+  Serial.print(" Celsius: ");
   //Serial.print(temp,1);                             // display Celsius
   //temp = (temp * 9.0)/ 5.0 + 32.0;                  // converts to  Fahrenheit
   //Serial.print(", Fahrenheit: ");
   //Serial.print(temp,1);                             // display  Fahrenheit
   Serial.println("");
-  outputValue = map(temp, 26, 30, 0, 255);            //temperature mainly ranges from 26 to 30 degrees for my room
-  Serial.print(outputValue,1);                               
+  outputValue = map(temp, 26, 30, 0, 255);            //temperature mainly ranges from 26 to 30 degrees for my room                               
   changeColor (outputValue); //call this function to decide the color of the light
 }
 
