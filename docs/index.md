@@ -58,13 +58,14 @@ You can find more information at these links:
 - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables
 
 -->
-| Feature | Description | Other Notes |
-|---------|-------------|-------------|
-|         |             |             |
-|         |             |             |
-|         |             |             |
-|         |             |             |
+| Feature                              | Description | Other Notes |
+|:---------:                           |-------------|-------------|
+| Motion Sensor                        | Uses photoresistor to sense when there is a disruption in the brightness. If a person walks past the photoresistor or waves their hand, the arduino detects it.          | The alarm is triggered when the brightness drops below a certain level, but depending on the location or time of day, the brightness may already be too low. In the code, that number would have to be adjusted to ensure that the brightness that it must drop too is a reasonable number             |
+| Volume Adjuster                      | The volume of the piezo buzzer can be adjusted with the potentiometer.                                                                                                       | N/A            |
+| Green/Red Light and Alarm Sound      | When the photoresistor detects motion, the rgb led turns red to indicate an intruder, and the piezo buzzer is activated.                                                    | N/A            |
+| On/Off Button                        | A button has to be clicked to initiate the alarm. When the button is clicked, the light turns green to indicate that it was turned on.             | N/A            |
 
+The arduino checks if the button is clicked, and in the case that the button is clicked, then checks if the brightness being inputted by the photoresistor is lower than a specified number. If the number is lower, then that means there is a disruption in the brightness, and the alarm is triggered. The specified number must be a reasonable number. It is easily found with the serial monitor. Simply check the brightness when there is nothing in the way of the photoresistor, and then check when you wave your hand. This product can be used as an alarm, since it is an alarm system. If you have a candy jar that you would not want your kids eating, you can put the alarm system near the jar, and when someone reaches into the jar, the alarm will activate scaring them away. This product can be used for keeping any small product safe. 
 
 <!--
 Below is an example of embedding a YouTube video in a markdown document for use in GitHub pages. 
