@@ -4,7 +4,7 @@ Welcome to your project page for Electronics for the Rest of Us. You'll use this
 A place for each deliverable has been created below for you in this markdown document. 
 Note that comments (such as this) will not appear in the final markdown document (which you can view with the "Preview" button).
 -->
-
+Welcome to my project page for Electronics for the Rest of Us. :grin:
 
 ## Day 1: Reflection
 <!--
@@ -14,8 +14,7 @@ You're also asked to insert a photo that represents your accomplishments on your
 - Take a photo of you working or one of your circuits and upload it to the /docs/images/ folder of this repository. 
 - Then, insert your photo into your document by modifying the markdown example that has been inserted below.
 -->
-
-I chose to participate in this module because as a student majoring in Computer Science, I have been learning about different programming languages, number types, and other software related aspects. This module made me realize that I had never tackled the hardware side, so I instantly seized the opportunity.  By the end of the module, I want to be able to build a circuit that could be applied to an object in the real world such as an alarm or traffic light. On the first day, I created a website using markdown, a plaintext formatted language. I find Markdown to be intriguing because of how easy it makes it to style text on the web. For example, if you want a heading, you can simply add a hash behind the text. To make the heading smaller, more hashes can be added. The convenience and ease that comes with this language makes it possible for anyone to design websites, even people who have no programming experience. In the future, if I am making a website for the description of my project, I would definitely choose Markdown over HTML to design it. It simply saves time and is also very easy to learn.
+On the first day of the module, we were introduced to a feature offered by Github, known as Github Pages. Using this feature, we were able to create a website in a matter of minutes. Although I have used Github countless times as a Computer Science student, I had never been introduced to Github Pages. Using markdown, a plaintext formatted language, and Github Pages, I was able to create a basic website. In the past, I have used HTML for websites, but it is much morer tedious and time consuming than using markdown. The convenience and ease that comes with this language makes it possible for anyone to design websites, even people who have no programming experience. If someone needs to design a website where they can show off their programming projects, or any project for that matter, they could use markdown as it simply saves time and is very easy to learn. Not to mention that you do not have to pay for a domain to have the website go public, as it is hosted by Github. I chose to participate in this module because as a student majoring in Computer Science, I have been learning about different programming languages, number types, and other software related aspects, but have never touched on the hardware aspect of computers, so I instantly siezed the oppurtunity when I found this electronics module. All in all, this module has already began to interest me. Being able to add snippets of code and links using markdown shows that this language is designed for programmers, and the fact that we have access to parts that can detect temperature and brightness just peaks my interest even more. 
 
 <!--
 Inserting an image takes the form: 
