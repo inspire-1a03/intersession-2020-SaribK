@@ -15,7 +15,7 @@ You're also asked to insert a photo that represents your accomplishments on your
 - Then, insert your photo into your document by modifying the markdown example that has been inserted below.
 -->
 
-I chose to participate in this module because as a student majoring in `Computer Science`, I have been learning about different programming languages, number types, and other software related aspects. This module made me realize that I had never tackled the *hardware side*, so I instantly seized the opportunity.  By the end of the module, I want to be able to build a circuit that could be applied to an object in the real world such as an **alarm** or **traffic light**. On the first day, I created a website using markdown, a plaintext formatted language. I find Markdown to be intriguing because of how easy it makes it to style text on the web. For example, if you want a heading, you can simply add a hash behind the text. To make the heading smaller, more hashes can be added. The convenience and ease that comes with this language makes it possible for anyone to design websites, even people who have no programming experience. In the future, if I am making a website for the description of my project, I would definitely choose Markdown over HTML to design it. It simply saves time and is also very easy to learn.
+I chose to participate in this module because as a student majoring in Computer Science, I have been learning about different programming languages, number types, and other software related aspects. This module made me realize that I had never tackled the hardware side, so I instantly seized the opportunity.  By the end of the module, I want to be able to build a circuit that could be applied to an object in the real world such as an alarm or traffic light. On the first day, I created a website using markdown, a plaintext formatted language. I find Markdown to be intriguing because of how easy it makes it to style text on the web. For example, if you want a heading, you can simply add a hash behind the text. To make the heading smaller, more hashes can be added. The convenience and ease that comes with this language makes it possible for anyone to design websites, even people who have no programming experience. In the future, if I am making a website for the description of my project, I would definitely choose Markdown over HTML to design it. It simply saves time and is also very easy to learn.
 
 <!--
 Inserting an image takes the form: 
@@ -83,6 +83,8 @@ void activateAlarm(int range, int volume)
 ```
 
 The specified number must be a reasonable number. It is easily found with the serial monitor. Simply check the brightness when there is nothing in the way of the photoresistor, and then check when you wave your hand. This product can be used as an alarm, since it is an alarm system. If you have a candy jar that you would not want your kids eating, you can put the alarm system near the jar, and when someone reaches into the jar, the alarm will activate scaring them away. This product can be used for keeping any small product safe. 
+
+[Here is a link to the code](https://github.com/inspire-1a03/intersession-2020-SaribK/blob/master/Final_ProjectV2.ino)
 
 <!--
 Below is an example of embedding a YouTube video in a markdown document for use in GitHub pages. 
