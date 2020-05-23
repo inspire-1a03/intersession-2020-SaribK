@@ -2,7 +2,7 @@
  * Motion Sensing Alarm
  * By Sarib Kashif
  * May 23, 2020
- * 
+ * Detects motion around photoresistor and activates an alarm if there is a disruption in brightness
  */
 
 int sensorPin = A1; //photoresistor pin
@@ -42,12 +42,12 @@ void loop() {
   int analogValue = analogRead(POTENTIOMETER_PIN);
   Serial.print(sensorValue);
   Serial.println("");
-  if (buttonState == HIGH && previous == LOW && millis() - time > debounce) {
-    if (currentState == HIGH)
+  if (buttonState == HIGH && previous == LOW && millis() - time > debounce) { //if the button is clicked and it has been 0.5 (debounce) seconds 
+    if (currentState == HIGH) //change the state of the alarm to the opposite of what it initially was
       currentState = LOW;
     else
       currentState = HIGH;
-    time = millis();  
+    time = millis();  //update the time
   }
   
   if (currentState == HIGH) {      // if button clicked
