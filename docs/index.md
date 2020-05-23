@@ -65,7 +65,24 @@ You can find more information at these links:
 | Green/Red Light and Alarm Sound      | When the photoresistor detects motion, the rgb led turns red to indicate an intruder, and the piezo buzzer is activated.                                                    | N/A            |
 | On/Off Button                        | A button has to be clicked to initiate the alarm. When the button is clicked, the light turns green to indicate that it was turned on.             | N/A            |
 
-The arduino checks if the button is clicked, and in the case that the button is clicked, then checks if the brightness being inputted by the photoresistor is lower than a specified number. If the number is lower, then that means there is a disruption in the brightness, and the alarm is triggered. The specified number must be a reasonable number. It is easily found with the serial monitor. Simply check the brightness when there is nothing in the way of the photoresistor, and then check when you wave your hand. This product can be used as an alarm, since it is an alarm system. If you have a candy jar that you would not want your kids eating, you can put the alarm system near the jar, and when someone reaches into the jar, the alarm will activate scaring them away. This product can be used for keeping any small product safe. 
+The arduino checks if the button is clicked, and in the case that the button is clicked, then checks if the brightness being inputted by the photoresistor is lower than a specified number. If the number is lower, then that means there is a disruption in the brightness, and the alarm is triggered. 
+
+``` 
+void activateAlarm(int range, int volume)
+{
+  if (range < 280) //if brightness is within 280 -- means motion has been detected. This number is going to change depending on location and time of day
+  {
+    setColor(255, 0, 0); //make rgb red
+    tone(BUZZER_PIN, 1000); //turn alarm on
+    analogWrite(BUZZER_PIN,volume); //use potentiometer to get the volume
+  } else {
+    setColor(0, 255, 0); //if no motion, just have green light to show that alarm is on
+    noTone(BUZZER_PIN); //turn alarm off
+  }
+} 
+```
+
+The specified number must be a reasonable number. It is easily found with the serial monitor. Simply check the brightness when there is nothing in the way of the photoresistor, and then check when you wave your hand. This product can be used as an alarm, since it is an alarm system. If you have a candy jar that you would not want your kids eating, you can put the alarm system near the jar, and when someone reaches into the jar, the alarm will activate scaring them away. This product can be used for keeping any small product safe. 
 
 <!--
 Below is an example of embedding a YouTube video in a markdown document for use in GitHub pages. 
