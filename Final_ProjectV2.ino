@@ -2,7 +2,7 @@
  * Motion Sensing Alarm
  * By Sarib Kashif
  * May 23, 2020
- * 
+ * Detects motion around photoresistor and activates an alarm if there is a disruption in brightness
  */
 
 int sensorPin = A1; //photoresistor pin
