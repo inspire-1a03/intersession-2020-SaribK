@@ -1,30 +1,9 @@
 /*
- * Inputs ADC Value from Thermistor and outputs Temperature in Celsius
- *  requires: include <math.h>
- * Utilizes the Steinhart-Hart Thermistor Equation:
- *    Temperature in Kelvin = 1 / {A + B[ln(R)] + C[ln(R)]3}
- *    where A = 0.001129148, B = 0.000234125 and C = 8.76741E-08
- *
- * These coefficients seem to work fairly universally, which is a bit of a
- * surprise.
- *
- * Schematic:
- *   [Ground] -- [10k-pad-resistor] -- | -- [thermistor] --[Vcc (5 or 3.3v)]
- *                                               |
- *                                          Analog Pin 0
- *
- * In case it isn't obvious (as it wasn't to me until I thought about it), the analog ports
- * measure the voltage between 0v -> Vcc which for an Arduino is a nominal 5v, but for (say)
- * a JeeNode, is a nominal 3.3v.
- *
- * The resistance calculation uses the ratio of the two resistors, so the voltage
- * specified above is really only required for the debugging that is commented out below
- *
- * Resistance = PadResistor * (1024/ADC -1)  
- *
- * I have used this successfully with some CH Pipe Sensors (https://www.atcsemitec.co.uk/pdfdocs/ch.pdf)
- * which be obtained from https://www.rapidonline.co.uk.
- *
+ * Thermistor working with RGB LED
+ * Sarib Kashif
+ * May 21 2020
+ * Program changes the color of the rgb led depending on the temperature reading from the thermistor
+ * Cold reading means blue, hot reading means red
  */
 
 int redPin = 11; 
