@@ -81,7 +81,7 @@ void activateAlarm(int range, int volume)
 } 
 ```
 
-The specified number must be a reasonable number. It is easily found with the serial monitor. Simply check the brightness when there is nothing in the way of the photoresistor, and then check when you wave your hand. This product can be used as an alarm, since it is an alarm system. If you have a candy jar that you would not want your kids eating, you can put the alarm system near the jar, and when someone reaches into the jar, the alarm will activate scaring them away. This product can be used for keeping any small product safe. 
+The specified number must be a reasonable number. It is easily found with the serial monitor. Simply check the brightness when there is nothing in the way of the photoresistor, and then check when you wave your hand. This product can be used as an alarm, since it is an alarm system. If you place the circuit near the entrance, and adjust the photoresistor "range", the alarm will trigger when someone walks in front of it, acting as an alarm. Additionally, if you have a candy jar that you would not want your kids eating from, you can put the alarm system near the jar, and when someone reaches into the jar, the alarm will activate scaring them away. 
 
 [Here is a link to the code](https://github.com/inspire-1a03/intersession-2020-SaribK/blob/master/Final_ProjectV2.ino)
 
@@ -93,7 +93,7 @@ Note that this video won't show when previewing the document in GitHub--it only 
 - Note that you may want to adjust the width and height parameters to make it fit well in your webpage
 -->
 
-<iframe width="789" height="444" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="789" height="444" src="https://www.youtube.com/watch?v=HDPT9wEdrEg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Final reflection & summary
@@ -102,3 +102,5 @@ In ~300 words:
 - Summarize your experience in this module. What you learned, what you liked, what you found challenging.
 - Reflect upon your learning and its relevance in your life.
 -->
+
+In this module, we learned to create websites using Github Pages and design circuits with an Arduino and some actuators and sensors. I enjoyed making my Arduino build-off project because it is something that can be applied to the outside world. Alarms are found in many households, and the thought of making one is very overwhelming, but the fact that it only took a few small sensors, a light and a buzzer, is amazing. In a matter of days, I was able to build a circuit that could, with a few upgrades, actually be used in a house. However, there were some challenges in making this circuit. The major challenge was that the photoresistor's reading was being disrupted because of the bright light coming from the LED. Due to this, the alarm would only activate at very close proximity. I fixed this by placing the photoresistor as far as possible, which increasing the range exponentially. Another challenge was getting the button to toggle. If I held down on the button, it would keep switching between on and off very fast. So to solve this, I added a delay which only allowed the button to toggle every half a second. This meant that after pressing the button once or even holding it, it would take half a second to switch back. I also enjoyed making the product pitch. Editing this video, and putting my creative skills to the test was very amusing, and because of this assignment, I have unlocked a new passion for creating videos. After completing this module, I can now say that I know both sides of a computer, hardware and software. I believe these skills are going to become useful in the future, whether it be making a website on Github, or creating a circuit I could use in my daily life, such as an alarm clock. 
