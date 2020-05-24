@@ -1,10 +1,9 @@
-# INSPIRE 1A03 - Sarib Kashif
+# Electronics for the Rest of Us
 <!--
 Welcome to your project page for Electronics for the Rest of Us. You'll use this page to describe and showcase your work throughout the module. 
 A place for each deliverable has been created below for you in this markdown document. 
 Note that comments (such as this) will not appear in the final markdown document (which you can view with the "Preview" button).
 -->
-Welcome to my project page for Electronics for the Rest of Us. :grin:
 
 ## Day 1: Reflection
 <!--
