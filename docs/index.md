@@ -34,7 +34,7 @@ Provide a short (~150 words) summary of your work on this circuit:
 -->
 The thermistor finds the temperature of the room and relays it to the arduino. This is where the map function is used on a range of temperatures (26 - 30) to colours (0 - 255). Then depending on this mapped number, the color of the led is changed. A number less than 80 changes to blue, greater than 180 changes to red, and otherwise, the color changes to yellow. I found it challenging to find an accurate way to change the colour depending on the temperature. Initially, even though the colour was right, the brightness was not matching. For example, when the value is less than 80, the colour (0, 0, 80) is not bright, so I had to multiply the number by 3. However, changing the color accurately did not work. The range between 0 and 80, or 180 and 255, should not have one colour, but the overall colour changing worked.
 
-[Here is a link to the code](https://github.com/inspire-1a03/intersession-2020-SaribK/blob/master/Thermistor_with_RGB_LED.ino)
+[Here is a link to the code](https://github.com/inspire-1a03/intersession-2020-SaribK/tree/master/Thermistor_with_RGB_LED)
 
 ## Arduino build-off results
 <!--
@@ -83,7 +83,7 @@ void activateAlarm(int range, int volume)
 
 The specified number must be a reasonable number. It is easily found with the serial monitor. Simply check the brightness when there is nothing in the way of the photoresistor, and then check when you wave your hand. This product can be used as an alarm, since it is an alarm system. If you place the circuit near the entrance, and adjust the photoresistor "range", the alarm will trigger when someone walks in front of it, acting as an alarm. Additionally, if you have a candy jar that you would not want your kids eating from, you can put the alarm system near the jar, and when someone reaches into the jar, the alarm will activate scaring them away. 
 
-[Here is a link to the code](https://github.com/inspire-1a03/intersession-2020-SaribK/blob/master/Final_ProjectV2.ino)
+[Here is a link to the code](https://github.com/inspire-1a03/intersession-2020-SaribK/tree/master/Final_ProjectV2)
 
 <!--
 Below is an example of embedding a YouTube video in a markdown document for use in GitHub pages. 
