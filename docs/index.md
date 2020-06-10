@@ -56,6 +56,7 @@ You can find more information at these links:
 - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables
 
 -->
+
 | Feature                              | Description | Other Notes |
 |:---------:                           |-------------|-------------|
 | Motion Sensor                        | Uses photoresistor to sense when there is a disruption in the brightness. If a person walks past the photoresistor or waves their hand, the arduino detects it.          | The alarm is triggered when the brightness drops below a certain level, but depending on the location or time of day, the brightness may already be too low. In the code, that number would have to be adjusted to ensure that the brightness that it must drop too is a reasonable number             |
